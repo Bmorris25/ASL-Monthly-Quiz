@@ -112,3 +112,234 @@
   outline: none;
   border-color: #333;
 }
+
+
+
+.quiz-screen {
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.quiz-container {
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+}
+
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.question-progress {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.question-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.question-image {
+  max-width: 100%;
+  max-height: 450px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.question-text {
+  margin-bottom: 1.5rem;
+}
+
+.answer-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.answer-button {
+  padding: 1.25rem;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.answer-button:hover:not(:disabled) {
+  border-color: #333;
+}
+
+.answer-button.selected {
+  background: #333;
+  color: white;
+  border-color: #333;
+}
+
+.answer-button:disabled {
+  cursor: default;
+}
+
+.next-button {
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 10px;
+  background: #333;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.next-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .quiz-screen {
+    padding: 1rem;
+  }
+
+  .quiz-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .answer-buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .question-image {
+    max-height: 350px;
+  }
+}
+
+
+
+.results-screen {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.results-container {
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+}
+
+.results-container h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.student-result {
+  margin-bottom: 2rem;
+}
+
+.student-result h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.student-result p {
+  font-size: 1.1rem;
+}
+
+.score-container {
+  margin: 2rem 0;
+  padding: 2rem;
+  border-radius: 16px;
+  border: 2px solid #ccc;
+}
+
+.score-label {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.score {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.score span {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.percentage {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.result-message {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+}
+
+.result-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.result-button {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10px;
+  background: #333;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.result-button:hover {
+  background: #555;
+}
+
+.result-button.secondary {
+  background: white;
+  color: #333;
+  border: 2px solid #333;
+}
+
+.result-button.secondary:hover {
+  background: #eee;
+}
+
+@media (max-width: 600px) {
+  .results-container h1 {
+    font-size: 2.25rem;
+  }
+
+  .score {
+    font-size: 4rem;
+  }
+
+  .result-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .result-button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
