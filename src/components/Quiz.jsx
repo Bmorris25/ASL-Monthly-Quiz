@@ -1,18 +1,54 @@
-function Quiz({ studentName, month, grade, onFinish }) {
-  const question = {
-    image: "/images/placeholder-question.png",
-    question: "What does this sign mean?",
-    answers: [
-      "Answer One",
-      "Answer Two",
-      "Answer Three",
-      "Answer Four",
-    ],
+import { useState } from "react";
+
+function Quiz({
+  studentName,
+  month,
+  grade,
+  questions,
+  onFinish,
+}) {
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [selectedAnswer, setSelectedAnswer] = useState("");
+  const [score, setScore] = useState(0);
+
+  const currentQuestion = questions[currentQuestionIndex];
+
+  const handleAnswerSelect = (answer) => {
+    setSelectedAnswer(answer);
   };
 
-  const handleFinish = () => {
-    onFinish(18);
+  const handleNext = () => {
+    const isCorrect =
+      selectedAnswer === currentQuestion.correct;
+
+    const updatedScore = isCorrect
+      ? score + 1
+      : score;
+
+    const isLastQuestion =
+      currentQuestionIndex === questions.length - 1;
+
+    if (isLastQuestion) {
+      onFinish(updatedScore);
+      return;
+    }
+
+    setScore(updatedScore);
+    setCurrentQuestionIndex(
+      (previousIndex) => previousIndex + 1
+    );
+    setSelectedAnswer("");
   };
+
+  if (!currentQuestion) {
+    return (
+      <div className="quiz-screen">
+        <div className="quiz-container">
+          <h2>No questions found.</h2>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="quiz-screen">
@@ -27,26 +63,36 @@ function Quiz({ studentName, month, grade, onFinish }) {
         </div>
 
         <div className="question-progress">
-          Question 1 of 20
+          Question {currentQuestionIndex + 1} of{" "}
+          {questions.length}
         </div>
 
         <div className="question-image-container">
           <img
-            src={question.image}
-            alt="Quiz question"
+            src={currentQuestion.image}
+            alt={`Question ${
+              currentQuestionIndex + 1
+            }`}
             className="question-image"
           />
         </div>
 
         <h2 className="question-text">
-          {question.question}
+          {currentQuestion.question}
         </h2>
 
         <div className="answer-buttons">
-          {question.answers.map((answer) => (
+          {currentQuestion.answers.map((answer) => (
             <button
               key={answer}
-              className="answer-button"
+              className={`answer-button ${
+                selectedAnswer === answer
+                  ? "selected"
+                  : ""
+              }`}
+              onClick={() =>
+                handleAnswerSelect(answer)
+              }
             >
               {answer}
             </button>
@@ -55,9 +101,13 @@ function Quiz({ studentName, month, grade, onFinish }) {
 
         <button
           className="next-button"
-          onClick={handleFinish}
+          onClick={handleNext}
+          disabled={!selectedAnswer}
         >
-          Finish Quiz
+          {currentQuestionIndex ===
+          questions.length - 1
+            ? "Finish Quiz"
+            : "Next"}
         </button>
 
       </div>

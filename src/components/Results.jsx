@@ -3,11 +3,10 @@ function Results({
   month,
   grade,
   score,
+  totalQuestions,
   onTryAgain,
   onChooseAnotherQuiz,
 }) {
-  const totalQuestions = 20;
-
   const percentage = Math.round(
     (score / totalQuestions) * 100
   );
@@ -15,7 +14,6 @@ function Results({
   return (
     <div className="results-screen">
       <div className="results-container">
-
         <h1>Quiz Complete!</h1>
 
         <div className="student-result">
@@ -45,7 +43,6 @@ function Results({
         </p>
 
         <div className="result-buttons">
-
           <button
             className="result-button"
             onClick={onTryAgain}
@@ -59,9 +56,7 @@ function Results({
           >
             Choose Another Quiz
           </button>
-
         </div>
-
       </div>
     </div>
   );

@@ -3,6 +3,9 @@ import StartScreen from "./components/StartScreen";
 import Quiz from "./components/Quiz";
 import Results from "./components/Results";
 
+import { septemberQuiz } from "./data/september";
+import { buildQuiz } from "./utils/buildQuiz";
+
 function App() {
   const [page, setPage] = useState("start");
 
@@ -10,6 +13,7 @@ function App() {
   const [selectedMonth, setSelectedMonth] = useState("");
   const [selectedGrade, setSelectedGrade] = useState("");
 
+  const [quizQuestions, setQuizQuestions] = useState([]);
   const [score, setScore] = useState(0);
 
   const handleStart = (name, month, grade) => {
@@ -17,6 +21,16 @@ function App() {
     setSelectedMonth(month);
     setSelectedGrade(grade);
 
+    // For now, only September is connected.
+    if (month === "September") {
+      const questionBank = septemberQuiz.questions[grade];
+
+      const randomQuiz = buildQuiz(questionBank, grade);
+
+      setQuizQuestions(randomQuiz);
+    }
+
+    setScore(0);
     setPage("quiz");
   };
 
@@ -26,11 +40,21 @@ function App() {
   };
 
   const handleTryAgain = () => {
+    const questionBank = septemberQuiz.questions[selectedGrade];
+
+    const newQuiz = buildQuiz(
+      questionBank,
+      selectedGrade
+    );
+
+    setQuizQuestions(newQuiz);
     setScore(0);
     setPage("quiz");
   };
 
   const handleChooseAnotherQuiz = () => {
+    setQuizQuestions([]);
+    setScore(0);
     setPage("start");
   };
 
@@ -44,6 +68,7 @@ function App() {
         studentName={studentName}
         month={selectedMonth}
         grade={selectedGrade}
+        questions={quizQuestions}
         onFinish={handleFinish}
       />
     );
@@ -56,11 +81,14 @@ function App() {
         month={selectedMonth}
         grade={selectedGrade}
         score={score}
+        totalQuestions={quizQuestions.length}
         onTryAgain={handleTryAgain}
         onChooseAnotherQuiz={handleChooseAnotherQuiz}
       />
     );
   }
+
+  return null;
 }
 
 export default App;
