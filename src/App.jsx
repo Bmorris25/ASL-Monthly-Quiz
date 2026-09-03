@@ -15,48 +15,74 @@ function App() {
 
   const [quizQuestions, setQuizQuestions] = useState([]);
   const [score, setScore] = useState(0);
+  const [answers, setAnswers] = useState([]);
 
   const handleStart = (name, month, grade) => {
     setStudentName(name);
     setSelectedMonth(month);
     setSelectedGrade(grade);
 
+
     // For now, only September is connected.
     if (month === "September") {
-      const questionBank = septemberQuiz.questions[grade];
+  const questionBank =
+    septemberQuiz.questions[grade];
 
-      const randomQuiz = buildQuiz(questionBank, grade);
+  const randomQuiz =
+    buildQuiz(questionBank, grade);
 
-      setQuizQuestions(randomQuiz);
-    }
+  setQuizQuestions(randomQuiz);
+
+  
+}
 
     setScore(0);
+    setAnswers([]);
     setPage("quiz");
   };
 
-  const handleFinish = (finalScore) => {
-    setScore(finalScore);
-    setPage("results");
-  };
+  const handleFinish = (
+  finalScore,
+  finalAnswers
+) => {
+  setScore(finalScore);
+  setAnswers(finalAnswers);
+  setPage("results");
+};
 
   const handleTryAgain = () => {
-    const questionBank = septemberQuiz.questions[selectedGrade];
+  const questionBank =
+    septemberQuiz.questions[selectedGrade];
 
-    const newQuiz = buildQuiz(
-      questionBank,
-      selectedGrade
+  const newQuiz = buildQuiz(
+    questionBank,
+    selectedGrade
+  );
+
+  setQuizQuestions(newQuiz);
+  if (newQuiz.length > 0) {
+  const speech =
+    new SpeechSynthesisUtterance(
+      newQuiz[0].question
     );
 
-    setQuizQuestions(newQuiz);
-    setScore(0);
-    setPage("quiz");
-  };
+  speech.rate = 0.9;
+
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(speech);
+}
+
+  setScore(0);
+  setAnswers([]);
+  setPage("quiz");
+};
 
   const handleChooseAnotherQuiz = () => {
-    setQuizQuestions([]);
-    setScore(0);
-    setPage("start");
-  };
+  setQuizQuestions([]);
+  setScore(0);
+  setAnswers([]);
+  setPage("start");
+};
 
   if (page === "start") {
     return <StartScreen onStart={handleStart} />;
@@ -77,13 +103,14 @@ function App() {
   if (page === "results") {
     return (
       <Results
-        studentName={studentName}
-        month={selectedMonth}
-        grade={selectedGrade}
-        score={score}
-        totalQuestions={quizQuestions.length}
-        onTryAgain={handleTryAgain}
-        onChooseAnotherQuiz={handleChooseAnotherQuiz}
+  studentName={studentName}
+  month={selectedMonth}
+  grade={selectedGrade}
+  score={score}
+  totalQuestions={quizQuestions.length}
+  answers={answers}
+  onTryAgain={handleTryAgain}
+  onChooseAnotherQuiz={handleChooseAnotherQuiz}
       />
     );
   }

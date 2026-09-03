@@ -25,12 +25,22 @@ function StartScreen({ onStart }) {
   ];
 
   const handleStart = () => {
-    if (!studentName.trim() || !selectedMonth || !selectedGrade) {
-      return;
-    }
+  if (!studentName.trim() || !selectedMonth || !selectedGrade) {
+    return;
+  }
 
-    onStart(studentName.trim(), selectedMonth, selectedGrade);
-  };
+  // Unlock browser speech using the student's click
+  const unlockSpeech =
+    new SpeechSynthesisUtterance(" ");
+
+  window.speechSynthesis.speak(unlockSpeech);
+
+  onStart(
+    studentName.trim(),
+    selectedMonth,
+    selectedGrade
+  );
+};
 
   return (
     <div className="start-screen">

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Quiz({
   studentName,
@@ -10,8 +10,34 @@ function Quiz({
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState("");
   const [score, setScore] = useState(0);
+  const [answers, setAnswers] = useState([]);
+  const [isMuted, setIsMuted] = useState(false);
 
   const currentQuestion = questions[currentQuestionIndex];
+
+  const speakText = (text) => {
+  if (isMuted) return;
+
+  window.speechSynthesis.cancel();
+
+  const speech = new SpeechSynthesisUtterance(text);
+  speech.rate = 0.9;
+
+  window.speechSynthesis.speak(speech);
+};
+
+  useEffect(() => {
+    if (!currentQuestion) return;
+
+    const speech = new SpeechSynthesisUtterance(
+      currentQuestion.question
+    );
+
+    speech.rate = 0.9;
+
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(speech);
+  }, [currentQuestion]);
 
   const handleAnswerSelect = (answer) => {
     setSelectedAnswer(answer);
@@ -25,20 +51,39 @@ function Quiz({
       ? score + 1
       : score;
 
+    const answerRecord = {
+    question: currentQuestion.question,
+    image: currentQuestion.image,
+    selectedAnswer: selectedAnswer,
+    correctAnswer: currentQuestion.correct,
+    isCorrect: isCorrect,
+  };
+
+  const updatedAnswers = [
+    ...answers,
+    answerRecord,
+  ];
+
     const isLastQuestion =
       currentQuestionIndex === questions.length - 1;
 
     if (isLastQuestion) {
-      onFinish(updatedScore);
+      onFinish(updatedScore, updatedAnswers);
       return;
     }
 
-    setScore(updatedScore);
-    setCurrentQuestionIndex(
-      (previousIndex) => previousIndex + 1
-    );
-    setSelectedAnswer("");
-  };
+    const nextQuestion =
+  questions[currentQuestionIndex + 1];
+
+  setAnswers(updatedAnswers);
+  setScore(updatedScore);
+  setCurrentQuestionIndex(
+    (previousIndex) => previousIndex + 1
+  );
+  setSelectedAnswer("");
+
+  speakText(nextQuestion.question);
+};
 
   if (!currentQuestion) {
     return (
@@ -55,12 +100,26 @@ function Quiz({
       <div className="quiz-container">
 
         <div className="quiz-header">
-          <span>{studentName}</span>
+  <span>{studentName}</span>
 
-          <span>
-            {month} • {grade}
-          </span>
-        </div>
+  <span>
+    {month} • {grade}
+  </span>
+
+  <button
+    type="button"
+    className="mute-button"
+    onClick={() => {
+      if (!isMuted) {
+        window.speechSynthesis.cancel();
+      }
+
+      setIsMuted(!isMuted);
+    }}
+  >
+    {isMuted ? "🔇 Muted" : "🔊 Sound On"}
+  </button>
+</div>
 
         <div className="question-progress">
           Question {currentQuestionIndex + 1} of{" "}
@@ -81,21 +140,27 @@ function Quiz({
           {currentQuestion.question}
         </h2>
 
+        <button
+            type="button"
+            className="repeat-question-button"
+            onClick={() => speakText(currentQuestion.question)}
+          >
+            🔊 Repeat Question
+          </button>
+
         <div className="answer-buttons">
           {currentQuestion.answers.map((answer) => (
             <button
-              key={answer}
-              className={`answer-button ${
-                selectedAnswer === answer
-                  ? "selected"
-                  : ""
-              }`}
-              onClick={() =>
-                handleAnswerSelect(answer)
-              }
-            >
-              {answer}
-            </button>
+                key={answer}
+                className={`answer-button ${
+                  selectedAnswer === answer ? "selected" : ""
+                }`}
+                onClick={() => handleAnswerSelect(answer)}
+                onMouseEnter={() => speakText(answer)}
+                onFocus={() => speakText(answer)}
+              >
+                {answer}
+              </button>
           ))}
         </div>
 
