@@ -1,4 +1,4 @@
-export const septemberQuiz = {
+export const octoberQuiz = {
   labels: {
     category1: "Animals",
     category2: "Days of the Week and Times of the Day",

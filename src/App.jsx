@@ -3,7 +3,7 @@ import StartScreen from "./components/StartScreen";
 import Quiz from "./components/Quiz";
 import Results from "./components/Results";
 
-import { septemberQuiz } from "./data/september";
+import { quizzes } from "./data/quizzes";
 import { buildQuiz } from "./utils/buildQuiz";
 
 function App() {
@@ -23,17 +23,16 @@ function App() {
     setSelectedGrade(grade);
 
 
-    // For now, only September is connected.
-    if (month === "September") {
+    const quizData = quizzes[month];
+
+if (quizData) {
   const questionBank =
-    septemberQuiz.questions[grade];
+    quizData.questions[grade];
 
   const randomQuiz =
     buildQuiz(questionBank, grade);
 
   setQuizQuestions(randomQuiz);
-
-  
 }
 
     setScore(0);
@@ -51,8 +50,11 @@ function App() {
 };
 
   const handleTryAgain = () => {
-  const questionBank =
-    septemberQuiz.questions[selectedGrade];
+  const quizData =
+  quizzes[selectedMonth];
+
+const questionBank =
+  quizData.questions[selectedGrade];
 
   const newQuiz = buildQuiz(
     questionBank,

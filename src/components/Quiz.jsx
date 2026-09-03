@@ -28,6 +28,7 @@ function Quiz({
 
   useEffect(() => {
     if (!currentQuestion) return;
+    if (isMuted) return;
 
     const speech = new SpeechSynthesisUtterance(
       currentQuestion.question
