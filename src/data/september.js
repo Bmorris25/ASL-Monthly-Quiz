@@ -75,16 +75,16 @@ export const septemberQuiz = {
         { id: "23-c1-10", question: "What letter is this sign?", image: "/gifs/september/alphabet/p.gif", answers: ["A", "B", "C", "D"], correct: "P" }
       ],
       category2: [
-        { id: "23-c2-1", question: "What does this spell?", image: "/gifs/september/alphabet/g.gif", answers: ["A", "B", "C", "D"], correct: "FROG" },
-        { id: "23-c2-2", question: "What does this spell?", image: "/gifs/september/alphabet/r.gif", answers: ["A", "B", "C", "D"], correct: "HAPPY" },
-        { id: "23-c2-3", question: "What does this spell?", image: "/gifs/september/alphabet/b.gif", answers: ["A", "B", "C", "D"], correct: "CAT" },
-        { id: "23-c2-4", question: "What does this spell?", image: "/gifs/september/alphabet/m.gif", answers: ["A", "B", "C", "D"], correct: "BOOK" },
-        { id: "23-c2-5", question: "What does this spell?", image: "/gifs/september/alphabet/t.gif", answers: ["A", "B", "C", "D"], correct: "STAR" },
-        { id: "23-c2-6", question: "What does this spell?", image: "/gifs/september/alphabet/k.gif", answers: ["A", "B", "C", "D"], correct: "FISH" },
-        { id: "23-c2-7", question: "What does this spell?", image: "/gifs/september/alphabet/a.gif", answers: ["A", "B", "C", "D"], correct: "MOON" },
-        { id: "23-c2-8", question: "What does this spell?", image: "/gifs/september/alphabet/w.gif", answers: ["A", "B", "C", "D"], correct: "SUN" },
-        { id: "23-c2-9", question: "What does this spell?", image: "/gifs/september/alphabet/f.gif", answers: ["A", "B", "C", "D"], correct: "TIGER" },
-        { id: "23-c2-10", question: "What does this spell?", image: "/gifs/september/alphabet/p.gif", answers: ["A", "B", "C", "D"], correct: "FOX" }
+        { id: "23-c2-1", question: "What does this spell?", image: "/gifs/september/fingerspelling/frog.gif", answers: ["A", "B", "C", "D"], correct: "FROG" },
+        { id: "23-c2-2", question: "What does this spell?", image: "/gifs/september/fingerspelling/happy.gif", answers: ["A", "B", "C", "D"], correct: "HAPPY" },
+        { id: "23-c2-3", question: "What does this spell?", image: "/gifs/september/fingerspelling/cat.gif", answers: ["A", "B", "C", "D"], correct: "CAT" },
+        { id: "23-c2-4", question: "What does this spell?", image: "/gifs/september/fingerspelling/book.gif", answers: ["A", "B", "C", "D"], correct: "BOOK" },
+        { id: "23-c2-5", question: "What does this spell?", image: "/gifs/september/fingerspelling/star.gif", answers: ["A", "B", "C", "D"], correct: "STAR" },
+        { id: "23-c2-6", question: "What does this spell?", image: "/gifs/september/fingerspelling/fish.gif", answers: ["A", "B", "C", "D"], correct: "FISH" },
+        { id: "23-c2-7", question: "What does this spell?", image: "/gifs/september/fingerspelling/moon.gif", answers: ["A", "B", "C", "D"], correct: "MOON" },
+        { id: "23-c2-8", question: "What does this spell?", image: "/gifs/september/fingerspelling/sun.gif", answers: ["A", "B", "C", "D"], correct: "SUN" },
+        { id: "23-c2-9", question: "What does this spell?", image: "/gifs/september/fingerspelling/tiger.gif", answers: ["A", "B", "C", "D"], correct: "TIGER" },
+        { id: "23-c2-10", question: "What does this spell?", image: "/gifs/september/fingerspelling/fox.gif", answers: ["A", "B", "C", "D"], correct: "FOX" }
       ],
       category3: [
         { id: "23-c3-1", question: "What number is this?", image: "/gifs/september/numbers/14.gif", answers: ["1", "20", "7", "9"], correct: "14" },
@@ -138,16 +138,16 @@ export const septemberQuiz = {
         { id: "45-c1-10", question: "What letter is this sign?", image: "/gifs/september/alphabet/p.gif", answers: ["A", "B", "C", "D"], correct: "P" }
       ],
       category2: [
-        { id: "45-c2-1", question: "What does this spell?", image: "/gifs/september/alphabet/g.gif", answers: ["A", "B", "C", "D"], correct: "DRAGON" },
-        { id: "45-c2-2", question: "What does this spell?", image: "/gifs/september/alphabet/r.gif", answers: ["A", "B", "C", "D"], correct: "SOCCER" },
-        { id: "45-c2-3", question: "What does this spell?", image: "/gifs/september/alphabet/b.gif", answers: ["A", "B", "C", "D"], correct: "MONSTER" },
-        { id: "45-c2-4", question: "What does this spell?", image: "/gifs/september/alphabet/m.gif", answers: ["A", "B", "C", "D"], correct: "POPCORN" },
-        { id: "45-c2-5", question: "What does this spell?", image: "/gifs/september/alphabet/t.gif", answers: ["A", "B", "C", "D"], correct: "WINTER" },
-        { id: "45-c2-6", question: "What does this spell?", image: "/gifs/september/alphabet/k.gif", answers: ["A", "B", "C", "D"], correct: "SUMMER" },
-        { id: "45-c2-7", question: "What does this spell?", image: "/gifs/september/alphabet/a.gif", answers: ["A", "B", "C", "D"], correct: "MINECRAFT" },
-        { id: "45-c2-8", question: "What does this spell?", image: "/gifs/september/alphabet/w.gif", answers: ["A", "B", "C", "D"], correct: "CHICKEN" },
-        { id: "45-c2-9", question: "What does this spell?", image: "/gifs/september/alphabet/f.gif", answers: ["A", "B", "C", "D"], correct: "RAINBOW" },
-        { id: "45-c2-10", question: "What does this spell?", image: "/gifs/september/alphabet/p.gif", answers: ["A", "B", "C", "D"], correct: "TURTLE" }
+        { id: "45-c2-1", question: "What does this spell?", image: "/gifs/september/fingerspelling/dragon.gif", answers: ["A", "B", "C", "D"], correct: "DRAGON" },
+        { id: "45-c2-2", question: "What does this spell?", image: "/gifs/september/fingerspelling/soccer.gif", answers: ["A", "B", "C", "D"], correct: "SOCCER" },
+        { id: "45-c2-3", question: "What does this spell?", image: "/gifs/september/fingerspelling/monster.gif", answers: ["A", "B", "C", "D"], correct: "MONSTER" },
+        { id: "45-c2-4", question: "What does this spell?", image: "/gifs/september/fingerspelling/popcorn.gif", answers: ["A", "B", "C", "D"], correct: "POPCORN" },
+        { id: "45-c2-5", question: "What does this spell?", image: "/gifs/september/fingerspelling/winter.gif", answers: ["A", "B", "C", "D"], correct: "WINTER" },
+        { id: "45-c2-6", question: "What does this spell?", image: "/gifs/september/fingerspelling/summer.gif", answers: ["A", "B", "C", "D"], correct: "SUMMER" },
+        { id: "45-c2-7", question: "What does this spell?", image: "/gifs/september/fingerspelling/minecraft.gif", answers: ["A", "B", "C", "D"], correct: "MINECRAFT" },
+        { id: "45-c2-8", question: "What does this spell?", image: "/gifs/september/fingerspelling/chicken.gif", answers: ["A", "B", "C", "D"], correct: "CHICKEN" },
+        { id: "45-c2-9", question: "What does this spell?", image: "/gifs/september/fingerspelling/rainbow.gif", answers: ["A", "B", "C", "D"], correct: "RAINBOW" },
+        { id: "45-c2-10", question: "What does this spell?", image: "/gifs/september/fingerspelling/turtle.gif", answers: ["A", "B", "C", "D"], correct: "TURTLE" }
       ],
       category3: [
         { id: "45-c3-1", question: "What number is this?", image: "/gifs/september/numbers/14.gif", answers: ["1", "20", "7", "9"], correct: "14" },
