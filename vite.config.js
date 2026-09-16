@@ -3,5 +3,5 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/ASL-Monthly-Quiz/",
+  base: "/asl-monthly-quiz/",
 });
