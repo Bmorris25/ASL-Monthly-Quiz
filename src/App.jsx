@@ -30,7 +30,7 @@ if (quizData) {
     quizData.questions[grade];
 
   const randomQuiz =
-    buildQuiz(questionBank, grade);
+    buildQuiz(questionBank);
 
   setQuizQuestions(randomQuiz);
 }
@@ -57,8 +57,7 @@ const questionBank =
   quizData.questions[selectedGrade];
 
   const newQuiz = buildQuiz(
-    questionBank,
-    selectedGrade
+    questionBank
   );
 
   setQuizQuestions(newQuiz);
