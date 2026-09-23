@@ -15,45 +15,16 @@ function shuffleArray(array) {
   return shuffled;
 }
 
-const quizConfig = {
-  "k-1": {
-    category1: 3,
-    category3: 3,
-    category4: 3,
-    category5: 3,
-  },
-
-  "2-3": {
-    category1: 3,
-    category2: 3,
-    category3: 3,
-    category4: 3,
-    category5: 3,
-  },
-
-  "4-5": {
-    category1: 3,
-    category2: 3,
-    category3: 3,
-    category4: 3,
-    category5: 3,
-  },
-};
-
-export function buildQuiz(questionBank, grade) {
-  const config = quizConfig[grade];
+export function buildQuiz(questionBank) {
   const selectedQuestions = [];
 
-  Object.entries(config).forEach(
-    ([category, amount]) => {
-      const categoryQuestions =
-        questionBank[category];
-
+  Object.values(questionBank).forEach(
+    (categoryQuestions) => {
       if (!categoryQuestions) return;
 
       const randomQuestions =
         shuffleArray(categoryQuestions)
-          .slice(0, amount)
+          .slice(0, 3)
           .map((question) => ({
             ...question,
             answers: shuffleArray(
