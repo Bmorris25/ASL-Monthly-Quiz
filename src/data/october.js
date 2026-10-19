@@ -41,68 +41,48 @@ export const octoberQuiz = {
   {
     id: "k1-c1-5",
     question: "What animal is this?",
-    image: `${import.meta.env.BASE_URL}gifs/october/animals/cow.gif`,
-    answers: ["COW", "PIG", "GIRAFFE", "BEAR"],
-    correct: "COW"
-  },
-  {
-    id: "k1-c1-6",
-    question: "What animal is this?",
     image: `${import.meta.env.BASE_URL}gifs/october/animals/dog.gif`,
     answers: ["DOG", "CAT", "BEAR", "LION"],
     correct: "DOG"
   },
   {
-    id: "k1-c1-7",
-    question: "What animal is this?",
-    image: `${import.meta.env.BASE_URL}gifs/october/animals/dolphin.gif`,
-    answers: ["DOLPHIN", "FISH", "ALLIGATOR", "SNAKE"],
-    correct: "DOLPHIN"
-  },
-  {
-    id: "k1-c1-8",
+    id: "k1-c1-6",
     question: "What animal is this?",
     image: `${import.meta.env.BASE_URL}gifs/october/animals/elephant.gif`,
     answers: ["ELEPHANT", "GIRAFFE", "LION", "BEAR"],
     correct: "ELEPHANT"
   },
   {
-    id: "k1-c1-9",
+    id: "k1-c1-7",
     question: "What animal is this?",
     image: `${import.meta.env.BASE_URL}gifs/october/animals/fish.gif`,
     answers: ["FISH", "DOLPHIN", "BIRD", "ALLIGATOR"],
     correct: "FISH"
   },
   {
-    id: "k1-c1-10",
+    id: "k1-c1-8",
     question: "What animal is this?",
     image: `${import.meta.env.BASE_URL}gifs/october/animals/giraffe.gif`,
     answers: ["GIRAFFE", "ELEPHANT", "LION", "COW"],
     correct: "GIRAFFE"
   },
   {
-    id: "k1-c1-11",
+    id: "k1-c1-9",
     question: "What animal is this?",
     image: `${import.meta.env.BASE_URL}gifs/october/animals/lion.gif`,
     answers: ["LION", "BEAR", "CAT", "MONKEY"],
     correct: "LION"
   },
   {
-    id: "k1-c1-12",
+    id: "k1-c1-10",
     question: "What animal is this?",
     image: `${import.meta.env.BASE_URL}gifs/october/animals/monkey.gif`,
     answers: ["MONKEY", "BEAR", "PIG", "LION"],
     correct: "MONKEY"
   },
+
   {
-    id: "k1-c1-13",
-    question: "What animal is this?",
-    image: `${import.meta.env.BASE_URL}gifs/october/animals/pig.gif`,
-    answers: ["PIG", "COW", "DOG", "CAT"],
-    correct: "PIG"
-  },
-  {
-    id: "k1-c1-14",
+    id: "k1-c1-11",
     question: "What animal is this?",
     image: `${import.meta.env.BASE_URL}gifs/october/animals/snake.gif`,
     answers: ["SNAKE", "ALLIGATOR", "FISH", "DOLPHIN"],
@@ -111,71 +91,23 @@ export const octoberQuiz = {
 ],
 
   category2: [
+  
   {
     id: "k1-c2-1",
-    question: "What is this sign?",
-    image: `${import.meta.env.BASE_URL}gifs/october/times/monday.gif`,
-    answers: ["MONDAY", "TUESDAY", "FRIDAY", "SUNDAY"],
-    correct: "MONDAY"
-  },
-  {
-    id: "k1-c2-2",
-    question: "What is this sign?",
-    image: `${import.meta.env.BASE_URL}gifs/october/times/tuesday.gif`,
-    answers: ["TUESDAY", "THURSDAY", "MONDAY", "SATURDAY"],
-    correct: "TUESDAY"
-  },
-  {
-    id: "k1-c2-3",
-    question: "What is this sign?",
-    image: `${import.meta.env.BASE_URL}gifs/october/times/wednesday.gif`,
-    answers: ["WEDNESDAY", "FRIDAY", "SUNDAY", "MONDAY"],
-    correct: "WEDNESDAY"
-  },
-  {
-    id: "k1-c2-4",
-    question: "What is this sign?",
-    image: `${import.meta.env.BASE_URL}gifs/october/times/thursday.gif`,
-    answers: ["THURSDAY", "TUESDAY", "SATURDAY", "WEDNESDAY"],
-    correct: "THURSDAY"
-  },
-  {
-    id: "k1-c2-5",
-    question: "What is this sign?",
-    image: `${import.meta.env.BASE_URL}gifs/october/times/friday.gif`,
-    answers: ["FRIDAY", "MONDAY", "WEDNESDAY", "SUNDAY"],
-    correct: "FRIDAY"
-  },
-  {
-    id: "k1-c2-6",
-    question: "What is this sign?",
-    image: `${import.meta.env.BASE_URL}gifs/october/times/saturday.gif`,
-    answers: ["SATURDAY", "SUNDAY", "TUESDAY", "THURSDAY"],
-    correct: "SATURDAY"
-  },
-  {
-    id: "k1-c2-7",
-    question: "What is this sign?",
-    image: `${import.meta.env.BASE_URL}gifs/october/times/sunday.gif`,
-    answers: ["SUNDAY", "SATURDAY", "MONDAY", "FRIDAY"],
-    correct: "SUNDAY"
-  },
-  {
-    id: "k1-c2-8",
     question: "What is this sign?",
     image: `${import.meta.env.BASE_URL}gifs/october/times/morning.gif`,
     answers: ["MORNING", "AFTERNOON", "NIGHT", "MONDAY"],
     correct: "MORNING"
   },
   {
-    id: "k1-c2-9",
+    id: "k1-c2-2",
     question: "What is this sign?",
     image: `${import.meta.env.BASE_URL}gifs/october/times/afternoon.gif`,
     answers: ["AFTERNOON", "MORNING", "NIGHT", "FRIDAY"],
     correct: "AFTERNOON"
   },
   {
-    id: "k1-c2-10",
+    id: "k1-c2-3",
     question: "What is this sign?",
     image: `${import.meta.env.BASE_URL}gifs/october/times/night.gif`,
     answers: ["NIGHT", "MORNING", "AFTERNOON", "SUNDAY"],
@@ -205,71 +137,59 @@ export const octoberQuiz = {
     answers: ["BASEBALL", "BASKETBALL", "FOOTBALL", "VOLLEYBALL"],
     correct: "BASEBALL"
   },
+  
   {
     id: "k1-c3-4",
-    question: "What is this sign?",
-    image: `${import.meta.env.BASE_URL}gifs/october/sports/golf.gif`,
-    answers: ["GOLF", "BASEBALL", "FOOTBALL", "RUNNING"],
-    correct: "GOLF"
-  },
-  {
-    id: "k1-c3-5",
     question: "What is this sign?",
     image: `${import.meta.env.BASE_URL}gifs/october/sports/football.gif`,
     answers: ["FOOTBALL", "BASKETBALL", "BASEBALL", "VOLLEYBALL"],
     correct: "FOOTBALL"
   },
+ 
   {
-    id: "k1-c3-6",
-    question: "What is this sign?",
-    image: `${import.meta.env.BASE_URL}gifs/october/sports/running.gif`,
-    answers: ["RUNNING", "SWIM", "DANCE", "CHEER"],
-    correct: "RUNNING"
-  },
-  {
-    id: "k1-c3-7",
+    id: "k1-c3-5",
     question: "What is this sign?",
     image: `${import.meta.env.BASE_URL}gifs/october/sports/cheer.gif`,
     answers: ["CHEER", "DANCE", "RUNNING", "SWIM"],
     correct: "CHEER"
   },
   {
-    id: "k1-c3-8",
+    id: "k1-c3-6",
     question: "What is this sign?",
     image: `${import.meta.env.BASE_URL}gifs/october/sports/swim.gif`,
     answers: ["SWIM", "RUNNING", "DANCE", "CHEER"],
     correct: "SWIM"
   },
   {
-    id: "k1-c3-9",
+    id: "k1-c3-7",
     question: "What is this sign?",
     image: `${import.meta.env.BASE_URL}gifs/october/sports/video-games.gif`,
     answers: ["VIDEO GAMES", "READING", "WRITING", "COOKING"],
     correct: "VIDEO GAMES"
   },
   {
-    id: "k1-c3-10",
+    id: "k1-c3-8",
     question: "What is this sign?",
     image: `${import.meta.env.BASE_URL}gifs/october/sports/cooking.gif`,
     answers: ["COOKING", "READING", "WRITING", "VIDEO GAMES"],
     correct: "COOKING"
   },
   {
-    id: "k1-c3-11",
+    id: "k1-c3-9",
     question: "What is this sign?",
     image: `${import.meta.env.BASE_URL}gifs/october/sports/writing.gif`,
     answers: ["WRITING", "READING", "COOKING", "VIDEO GAMES"],
     correct: "WRITING"
   },
   {
-    id: "k1-c3-12",
+    id: "k1-c3-10",
     question: "What is this sign?",
     image: `${import.meta.env.BASE_URL}gifs/october/sports/reading.gif`,
     answers: ["READING", "WRITING", "COOKING", "VIDEO GAMES"],
     correct: "READING"
   },
   {
-    id: "k1-c3-13",
+    id: "k1-c3-11",
     question: "What is this sign?",
     image: `${import.meta.env.BASE_URL}gifs/october/sports/dance.gif`,
     answers: ["DANCE", "CHEER", "RUNNING", "SWIM"],
@@ -299,57 +219,38 @@ export const octoberQuiz = {
     answers: ["TRICK OR TREAT", "HALLOWEEN", "CANDY", "COSTUME"],
     correct: "TRICK OR TREAT"
   },
+  
   {
     id: "k1-c4-4",
-    question: "What am I signing?",
-    image: `${import.meta.env.BASE_URL}gifs/october/halloween/pumpkin.gif`,
-    answers: ["PUMPKIN", "CANDY", "ORANGE", "HALLOWEEN"],
-    correct: "PUMPKIN"
-  },
-  {
-    id: "k1-c4-5",
-    question: "What am I signing?",
-    image: `${import.meta.env.BASE_URL}gifs/october/halloween/costume.gif`,
-    answers: ["COSTUME", "HALLOWEEN", "GHOST", "DANCE"],
-    correct: "COSTUME"
-  },
-  {
-    id: "k1-c4-6",
     question: "What am I signing?",
     image: `${import.meta.env.BASE_URL}gifs/october/halloween/ghost.gif`,
     answers: ["GHOST", "WITCH", "SPIDER", "SCARED"],
     correct: "GHOST"
   },
   {
-    id: "k1-c4-7",
+    id: "k1-c4-5",
     question: "What am I signing?",
     image: `${import.meta.env.BASE_URL}gifs/october/halloween/spider.gif`,
     answers: ["SPIDER", "SNAKE", "GHOST", "ALLIGATOR"],
     correct: "SPIDER"
   },
+  
   {
-    id: "k1-c4-8",
-    question: "What am I signing?",
-    image: `${import.meta.env.BASE_URL}gifs/october/halloween/witch.gif`,
-    answers: ["WITCH", "GHOST", "COSTUME", "SCARED"],
-    correct: "WITCH"
-  },
-  {
-    id: "k1-c4-9",
+    id: "k1-c4-6",
     question: "What am I signing?",
     image: `${import.meta.env.BASE_URL}gifs/october/halloween/leaves.gif`,
     answers: ["LEAVES", "TREE", "GREEN", "ORANGE"],
     correct: "LEAVES"
   },
   {
-    id: "k1-c4-10",
+    id: "k1-c4-7",
     question: "What am I signing?",
     image: `${import.meta.env.BASE_URL}gifs/october/halloween/tree.gif`,
     answers: ["TREE", "LEAVES", "GREEN", "BROWN"],
     correct: "TREE"
   },
   {
-    id: "k1-c4-11",
+    id: "k1-c4-8",
     question: "What am I signing?",
     image: `${import.meta.env.BASE_URL}gifs/october/halloween/moon.gif`,
     answers: ["MOON", "NIGHT", "YELLOW", "WHITE"],
