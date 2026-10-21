@@ -197,7 +197,7 @@ export const octoberQuiz = {
   }
 ],
 
- category4: [
+/*category4: [
   {
     id: "k1-c4-1",
     question: "What am I signing?",
@@ -256,106 +256,8 @@ export const octoberQuiz = {
     answers: ["MOON", "NIGHT", "YELLOW", "WHITE"],
     correct: "MOON"
   }
-],
+], */
 
-  category5: [
-  {
-    id: "k1-c5-1",
-    question: "What is this sentence?",
-    image: `${import.meta.env.BASE_URL}gifs/october/sentences/clouds.gif`,
-    answers: [
-      "IN FALL, CLOUDS I SEE",
-      "IN FALL, MOON I SEE",
-      "IN FALL, OWLS I SEE",
-      "IN FALL, APPLES I SEE"
-    ],
-    correct: "IN FALL, CLOUDS I SEE"
-  },
-  {
-    id: "k1-c5-2",
-    question: "What is this sentence?",
-    image: `${import.meta.env.BASE_URL}gifs/october/sentences/owls.gif`,
-    answers: [
-      "IN FALL, OWLS I SEE",
-      "IN FALL, HORSES I SEE",
-      "IN FALL, CLOUDS I SEE",
-      "IN FALL, MOON I SEE"
-    ],
-    correct: "IN FALL, OWLS I SEE"
-  },
-  {
-    id: "k1-c5-3",
-    question: "What is this sentence?",
-    image: `${import.meta.env.BASE_URL}gifs/october/sentences/apples.gif`,
-    answers: [
-      "IN FALL, APPLES I SEE",
-      "IN FALL, SUNFLOWERS I SEE",
-      "IN FALL, CLOUDS I SEE",
-      "IN FALL, HORSES I SEE"
-    ],
-    correct: "IN FALL, APPLES I SEE"
-  },
-  {
-    id: "k1-c5-4",
-    question: "What is this sentence?",
-    image: `${import.meta.env.BASE_URL}gifs/october/sentences/sunflowers.gif`,
-    answers: [
-      "IN FALL, SUNFLOWERS I SEE",
-      "IN FALL, APPLES I SEE",
-      "IN FALL, CLOUDS I SEE",
-      "IN FALL, COSTUMES I SEE"
-    ],
-    correct: "IN FALL, SUNFLOWERS I SEE"
-  },
-  {
-    id: "k1-c5-5",
-    question: "What is this sentence?",
-    image: `${import.meta.env.BASE_URL}gifs/october/sentences/moon.gif`,
-    answers: [
-      "IN FALL, MOON I SEE",
-      "IN FALL, CLOUDS I SEE",
-      "IN FALL, OWLS I SEE",
-      "IN FALL, SUNFLOWERS I SEE"
-    ],
-    correct: "IN FALL, MOON I SEE"
-  },
-  {
-    id: "k1-c5-6",
-    question: "What is this sentence?",
-    image: `${import.meta.env.BASE_URL}gifs/october/sentences/costumes.gif`,
-    answers: [
-      "IN FALL, COSTUMES I SEE",
-      "IN FALL, APPLES I SEE",
-      "IN FALL, HORSES I SEE",
-      "IN FALL, SUNFLOWERS I SEE"
-    ],
-    correct: "IN FALL, COSTUMES I SEE"
-  },
-  {
-    id: "k1-c5-7",
-    question: "What is this sentence?",
-    image: `${import.meta.env.BASE_URL}gifs/october/sentences/orange.gif`,
-    answers: [
-      "IN FALL, ORANGE I SEE",
-      "IN FALL, MOON I SEE",
-      "IN FALL, APPLES I SEE",
-      "IN FALL, CLOUDS I SEE"
-    ],
-    correct: "IN FALL, ORANGE I SEE"
-  },
-  {
-    id: "k1-c5-8",
-    question: "What is this sentence?",
-    image: `${import.meta.env.BASE_URL}gifs/october/sentences/horses.gif`,
-    answers: [
-      "IN FALL, HORSES I SEE",
-      "IN FALL, OWLS I SEE",
-      "IN FALL, COSTUMES I SEE",
-      "IN FALL, SUNFLOWERS I SEE"
-    ],
-    correct: "IN FALL, HORSES I SEE"
-  }
-],
 },
 
     "2-3": {
@@ -723,7 +625,7 @@ export const octoberQuiz = {
   {
     id: "23-c5-2",
     question: "What is this sentence?",
-    image: `${import.meta.env.BASE_URL}gifs/october/sentences/squirels-owls.gif`,
+    image: `${import.meta.env.BASE_URL}gifs/october/sentences/squirrel-owl.gif`,
     answers: [
       "IN FALL, SQUIRRELS AND OWLS I SEE",
       "IN FALL, SQUIRRELS AND DOGS I SEE",
@@ -735,7 +637,7 @@ export const octoberQuiz = {
   {
     id: "23-c5-3",
     question: "What is this sentence?",
-    image: `${import.meta.env.BASE_URL}gifs/october/sentences/pumpkins-apples.gif`,
+    image: `${import.meta.env.BASE_URL}gifs/october/sentences/pumpkin-apple.gif`,
     answers: [
       "IN FALL, PUMPKINS AND APPLES I SEE",
       "IN FALL, PUMPKINS AND SUNFLOWERS I SEE",
@@ -747,38 +649,38 @@ export const octoberQuiz = {
   {
     id: "23-c5-4",
     question: "What is this sentence?",
-    image: `${import.meta.env.BASE_URL}gifs/october/sentences/sunflowers-branches.gif`,
+    image: `${import.meta.env.BASE_URL}gifs/october/sentences/sunflower-rake.gif`,
     answers: [
-      "IN FALL, SUNFLOWERS AND BRANCHES I SEE",
+      "IN FALL, SUNFLOWERS AND RAKES I SEE",
       "IN FALL, SUNFLOWERS AND TREES I SEE",
       "IN FALL, BRANCHES AND CLOUDS I SEE",
       "IN FALL, SUNFLOWERS AND APPLES I SEE"
     ],
-    correct: "IN FALL, SUNFLOWERS AND BRANCHES I SEE"
+    correct: "IN FALL, SUNFLOWERS AND RAKES I SEE"
   },
   {
     id: "23-c5-5",
     question: "What is this sentence?",
-    image: `${import.meta.env.BASE_URL}gifs/october/sentences/moon-hats.gif`,
+    image: `${import.meta.env.BASE_URL}gifs/october/sentences/jacket-hats.gif`,
     answers: [
-      "IN FALL, MOON AND HATS I SEE",
-      "IN FALL, MOON AND CLOUDS I SEE",
+      "IN FALL, JACKET AND HATS I SEE",
+      "IN FALL, JACKET AND CLOUDS I SEE",
       "IN FALL, HATS AND COSTUMES I SEE",
       "IN FALL, MOON AND OWLS I SEE"
     ],
-    correct: "IN FALL, MOON AND HATS I SEE"
+    correct: "IN FALL, JACKET AND HATS I SEE"
   },
   {
     id: "23-c5-6",
     question: "What is this sentence?",
-    image: `${import.meta.env.BASE_URL}gifs/october/sentences/halloweer-costumes.gif`,
+    image: `${import.meta.env.BASE_URL}gifs/october/sentences/moon-costume.gif`,
     answers: [
-      "IN FALL, HALLOWEEN AND COSTUMES I SEE",
+      "IN FALL, MOON AND COSTUMES I SEE",
       "IN FALL, HALLOWEEN AND CANDY I SEE",
       "IN FALL, COSTUMES AND PUMPKINS I SEE",
-      "IN FALL, HALLOWEEN AND PUMPKINS I SEE"
+      "IN FALL, MOON AND PUMPKINS I SEE"
     ],
-    correct: "IN FALL, HALLOWEEN AND COSTUMES I SEE"
+    correct: "IN FALL, MOON AND COSTUMES I SEE"
   },
   {
     id: "23-c5-7",
@@ -795,14 +697,14 @@ export const octoberQuiz = {
   {
     id: "23-c5-8",
     question: "What is this sentence?",
-    image: `${import.meta.env.BASE_URL}gifs/october/sentences/horses-dogs.gif`,
+    image: `${import.meta.env.BASE_URL}gifs/october/sentences/cats-dogs.gif`,
     answers: [
-      "IN FALL, HORSES AND DOGS I SEE",
+      "IN FALL, CATS AND DOGS I SEE",
       "IN FALL, HORSES AND OWLS I SEE",
       "IN FALL, DOGS AND SQUIRRELS I SEE",
       "IN FALL, HORSES AND SQUIRRELS I SEE"
     ],
-    correct: "IN FALL, HORSES AND DOGS I SEE"
+    correct: "IN FALL, CATS AND DOGS I SEE"
   }
 ],
 },
@@ -1172,7 +1074,7 @@ export const octoberQuiz = {
   {
     id: "45-c5-2",
     question: "What is this sentence?",
-    image: `${import.meta.env.BASE_URL}gifs/october/sentences/squirrels-owls-crows.gif`,
+    image: `${import.meta.env.BASE_URL}gifs/october/sentences/squirrel-owl-crow.gif`,
     answers: [
       "IN FALL, SQUIRRELS, OWLS, CROWS I SEE",
       "IN FALL, SQUIRRELS, OWLS, HORSES I SEE",
@@ -1196,7 +1098,7 @@ export const octoberQuiz = {
   {
     id: "45-c5-4",
     question: "What is this sentence?",
-    image: `${import.meta.env.BASE_URL}gifs/october/sentences/rakes-branches-sunflowers.gif`,
+    image: `${import.meta.env.BASE_URL}gifs/october/sentences/rake-branch-sunflower.gif`,
     answers: [
       "IN FALL, RAKES, BRANCHES, SUNFLOWERS I SEE",
       "IN FALL, RAKES, BRANCHES, LEAVES I SEE",
@@ -1208,7 +1110,7 @@ export const octoberQuiz = {
   {
     id: "45-c5-5",
     question: "What is this sentence?",
-    image: `${import.meta.env.BASE_URL}gifs/october/sentences/moon-jackets-hats.gif`,
+    image: `${import.meta.env.BASE_URL}gifs/october/sentences/moon-jacket-hat.gif`,
     answers: [
       "IN FALL, MOON, JACKETS, HATS I SEE",
       "IN FALL, MOON, JACKETS, COSTUMES I SEE",
