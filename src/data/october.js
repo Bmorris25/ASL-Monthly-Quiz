@@ -740,126 +740,126 @@ export const octoberQuiz = {
     correct: "CAT"
   },
   {
-    id: "45-c1-4",
+    id: "45-c1-5",
     question: "What animal is this?",
     image: `${import.meta.env.BASE_URL}gifs/october/animals/chicken.gif`,
     answers: ["CAT", "BIRD", "CHICKEN", "BEAR"],
     correct: "CHICKEN"
   },
   {
-    id: "45-c1-5",
+    id: "45-c1-6",
     question: "What animal is this?",
     image: `${import.meta.env.BASE_URL}gifs/october/animals/cow.gif`,
     answers: ["COW", "PIG", "GIRAFFE", "BEAR"],
     correct: "COW"
   },
   {
-    id: "45-c1-6",
+    id: "45-c1-7",
     question: "What animal is this?",
     image: `${import.meta.env.BASE_URL}gifs/october/animals/dog.gif`,
     answers: ["DOG", "CAT", "BEAR", "LION"],
     correct: "DOG"
   },
   {
-    id: "45-c1-7",
+    id: "45-c1-8",
     question: "What animal is this?",
     image: `${import.meta.env.BASE_URL}gifs/october/animals/dolphin.gif`,
     answers: ["DOLPHIN", "FISH", "ALLIGATOR", "SNAKE"],
     correct: "DOLPHIN"
   },
    {
-    id: "45-c1-7",
+    id: "45-c1-9",
     question: "What animal is this?",
     image: `${import.meta.env.BASE_URL}gifs/october/animals/duck.gif`,
     answers: ["DOLPHIN", "FISH", "BIRD", "DUCK"],
     correct: "DUCK"
   },
   {
-    id: "45-c1-8",
+    id: "45-c1-10",
     question: "What animal is this?",
     image: `${import.meta.env.BASE_URL}gifs/october/animals/elephant.gif`,
     answers: ["ELEPHANT", "GIRAFFE", "LION", "BEAR"],
     correct: "ELEPHANT"
   },
   {
-    id: "45-c1-9",
+    id: "45-c1-11",
     question: "What animal is this?",
     image: `${import.meta.env.BASE_URL}gifs/october/animals/fish.gif`,
     answers: ["FISH", "DOLPHIN", "BIRD", "ALLIGATOR"],
     correct: "FISH"
   },
   {
-    id: "45-c1-9",
+    id: "45-c1-12",
     question: "What animal is this?",
     image: `${import.meta.env.BASE_URL}gifs/october/animals/fox.gif`,
     answers: ["FISH", "FOX", "BIRD", "MOUSE"],
     correct: "FOX"
   },
   {
-    id: "45-c1-9",
+    id: "45-c1-13",
     question: "What animal is this?",
     image: `${import.meta.env.BASE_URL}gifs/october/animals/frog.gif`,
     answers: ["FROG", "PIG", "BIRD", "LION"],
     correct: "FROG"
   },
   {
-    id: "45-c1-10",
+    id: "45-c1-14",
     question: "What animal is this?",
     image: `${import.meta.env.BASE_URL}gifs/october/animals/giraffe.gif`,
     answers: ["GIRAFFE", "ELEPHANT", "LION", "COW"],
     correct: "GIRAFFE"
   },
   {
-    id: "45-c1-9",
+    id: "45-c1-15",
     question: "What animal is this?",
     image: `${import.meta.env.BASE_URL}gifs/october/animals/HORSE.gif`,
     answers: ["COW", "CAT", "HORSE", "BULL"],
     correct: "HORSE"
   },
   {
-    id: "45-c1-11",
+    id: "45-c1-16",
     question: "What animal is this?",
     image: `${import.meta.env.BASE_URL}gifs/october/animals/lion.gif`,
     answers: ["LION", "BEAR", "CAT", "MONKEY"],
     correct: "LION"
   },
   {
-    id: "45-c1-12",
+    id: "45-c1-17",
     question: "What animal is this?",
     image: `${import.meta.env.BASE_URL}gifs/october/animals/monkey.gif`,
     answers: ["MONKEY", "BEAR", "PIG", "LION"],
     correct: "MONKEY"
   },
   {
-    id: "45-c1-12",
+    id: "45-c1-18",
     question: "What animal is this?",
     image: `${import.meta.env.BASE_URL}gifs/october/animals/mouse.gif`,
     answers: ["MONKEY", "MOUSE", "PIG", "FOX"],
     correct: "MOUSE"
   },
   {
-    id: "45-c1-13",
+    id: "45-c1-19",
     question: "What animal is this?",
     image: `${import.meta.env.BASE_URL}gifs/october/animals/pig.gif`,
     answers: ["PIG", "COW", "DOG", "CAT"],
     correct: "PIG"
   },
   {
-    id: "45-c1-14",
+    id: "45-c1-20",
     question: "What animal is this?",
     image: `${import.meta.env.BASE_URL}gifs/october/animals/snake.gif`,
     answers: ["SNAKE", "ALLIGATOR", "FISH", "DOLPHIN"],
     correct: "SNAKE"
   },
   {
-    id: "45-c1-14",
+    id: "45-c1-21",
     question: "What animal is this?",
     image: `${import.meta.env.BASE_URL}gifs/october/animals/sheep.gif`,
     answers: ["SHEEP", "DOLPHIN", "SNAKE", "COW"],
     correct: "SHEEP"
   },
   {
-    id: "45-c1-14",
+    id: "45-c1-22",
     question: "What animal is this?",
     image: `${import.meta.env.BASE_URL}gifs/october/animals/snake.gif`,
     answers: ["SHEEP", "DOLPHIN", "SNAKE", "COW"],
