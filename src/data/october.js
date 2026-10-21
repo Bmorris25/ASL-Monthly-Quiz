@@ -740,6 +740,13 @@ export const octoberQuiz = {
     correct: "CAT"
   },
   {
+    id: "45-c1-4",
+    question: "What animal is this?",
+    image: `${import.meta.env.BASE_URL}gifs/october/animals/chicken.gif`,
+    answers: ["CAT", "BIRD", "CHICKEN", "BEAR"],
+    correct: "CHICKEN"
+  },
+  {
     id: "45-c1-5",
     question: "What animal is this?",
     image: `${import.meta.env.BASE_URL}gifs/october/animals/cow.gif`,
@@ -760,6 +767,13 @@ export const octoberQuiz = {
     answers: ["DOLPHIN", "FISH", "ALLIGATOR", "SNAKE"],
     correct: "DOLPHIN"
   },
+   {
+    id: "45-c1-7",
+    question: "What animal is this?",
+    image: `${import.meta.env.BASE_URL}gifs/october/animals/duck.gif`,
+    answers: ["DOLPHIN", "FISH", "BIRD", "DUCK"],
+    correct: "DUCK"
+  },
   {
     id: "45-c1-8",
     question: "What animal is this?",
@@ -775,11 +789,32 @@ export const octoberQuiz = {
     correct: "FISH"
   },
   {
+    id: "45-c1-9",
+    question: "What animal is this?",
+    image: `${import.meta.env.BASE_URL}gifs/october/animals/fox.gif`,
+    answers: ["FISH", "FOX", "BIRD", "MOUSE"],
+    correct: "FOX"
+  },
+  {
+    id: "45-c1-9",
+    question: "What animal is this?",
+    image: `${import.meta.env.BASE_URL}gifs/october/animals/frog.gif`,
+    answers: ["FROG", "PIG", "BIRD", "LION"],
+    correct: "FROG"
+  },
+  {
     id: "45-c1-10",
     question: "What animal is this?",
     image: `${import.meta.env.BASE_URL}gifs/october/animals/giraffe.gif`,
     answers: ["GIRAFFE", "ELEPHANT", "LION", "COW"],
     correct: "GIRAFFE"
+  },
+  {
+    id: "45-c1-9",
+    question: "What animal is this?",
+    image: `${import.meta.env.BASE_URL}gifs/october/animals/HORSE.gif`,
+    answers: ["COW", "CAT", "HORSE", "BULL"],
+    correct: "HORSE"
   },
   {
     id: "45-c1-11",
@@ -796,6 +831,13 @@ export const octoberQuiz = {
     correct: "MONKEY"
   },
   {
+    id: "45-c1-12",
+    question: "What animal is this?",
+    image: `${import.meta.env.BASE_URL}gifs/october/animals/mouse.gif`,
+    answers: ["MONKEY", "MOUSE", "PIG", "FOX"],
+    correct: "MOUSE"
+  },
+  {
     id: "45-c1-13",
     question: "What animal is this?",
     image: `${import.meta.env.BASE_URL}gifs/october/animals/pig.gif`,
@@ -807,6 +849,20 @@ export const octoberQuiz = {
     question: "What animal is this?",
     image: `${import.meta.env.BASE_URL}gifs/october/animals/snake.gif`,
     answers: ["SNAKE", "ALLIGATOR", "FISH", "DOLPHIN"],
+    correct: "SNAKE"
+  },
+  {
+    id: "45-c1-14",
+    question: "What animal is this?",
+    image: `${import.meta.env.BASE_URL}gifs/october/animals/sheep.gif`,
+    answers: ["SHEEP", "DOLPHIN", "SNAKE", "COW"],
+    correct: "SHEEP"
+  },
+  {
+    id: "45-c1-14",
+    question: "What animal is this?",
+    image: `${import.meta.env.BASE_URL}gifs/october/animals/snake.gif`,
+    answers: ["SHEEP", "DOLPHIN", "SNAKE", "COW"],
     correct: "SNAKE"
   }
 ],
@@ -951,14 +1007,14 @@ export const octoberQuiz = {
   {
     id: "45-c3-10",
     question: "What is this sign?",
-    image: `${import.meta.env.BASE_URL}gifs/october/sports/cooking.gif`,
+    image: `${import.meta.env.BASE_URL}gifs/october/sports/cook.gif`,
     answers: ["COOKING", "READING", "WRITING", "VIDEO GAMES"],
     correct: "COOKING"
   },
   {
     id: "45-c3-11",
     question: "What is this sign?",
-    image: `${import.meta.env.BASE_URL}gifs/october/sports/writing.gif`,
+    image: `${import.meta.env.BASE_URL}gifs/october/sports/write.gif`,
     answers: ["WRITING", "READING", "COOKING", "VIDEO GAMES"],
     correct: "WRITING"
   },
@@ -1038,7 +1094,7 @@ export const octoberQuiz = {
   {
     id: "45-c4-9",
     question: "What am I signing?",
-    image: `${import.meta.env.BASE_URL}gifs/october/halloween/leaves.gif`,
+    image: `${import.meta.env.BASE_URL}gifs/october/halloween/leaf.gif`,
     answers: ["LEAVES", "TREE", "GREEN", "ORANGE"],
     correct: "LEAVES"
   },
