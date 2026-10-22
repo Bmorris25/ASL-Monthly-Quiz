@@ -170,14 +170,14 @@ export const octoberQuiz = {
   {
     id: "k1-c3-8",
     question: "What is this sign?",
-    image: `${import.meta.env.BASE_URL}gifs/october/sports/cooking.gif`,
+    image: `${import.meta.env.BASE_URL}gifs/october/sports/cook.gif`,
     answers: ["COOKING", "READING", "WRITING", "VIDEO GAMES"],
     correct: "COOKING"
   },
   {
     id: "k1-c3-9",
     question: "What is this sign?",
-    image: `${import.meta.env.BASE_URL}gifs/october/sports/writing.gif`,
+    image: `${import.meta.env.BASE_URL}gifs/october/sports/write.gif`,
     answers: ["WRITING", "READING", "COOKING", "VIDEO GAMES"],
     correct: "WRITING"
   },
@@ -502,14 +502,14 @@ export const octoberQuiz = {
   {
     id: "23-c3-10",
     question: "What is this sign?",
-    image: `${import.meta.env.BASE_URL}gifs/october/sports/cooking.gif`,
+    image: `${import.meta.env.BASE_URL}gifs/october/sports/cook.gif`,
     answers: ["COOKING", "READING", "WRITING", "VIDEO GAMES"],
     correct: "COOKING"
   },
   {
     id: "23-c3-11",
     question: "What is this sign?",
-    image: `${import.meta.env.BASE_URL}gifs/october/sports/writing.gif`,
+    image: `${import.meta.env.BASE_URL}gifs/october/sports/write.gif`,
     answers: ["WRITING", "READING", "COOKING", "VIDEO GAMES"],
     correct: "WRITING"
   },
