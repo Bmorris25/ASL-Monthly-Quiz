@@ -661,7 +661,7 @@ export const octoberQuiz = {
   {
     id: "23-c5-5",
     question: "What is this sentence?",
-    image: `${import.meta.env.BASE_URL}gifs/october/sentences/jacket-hats.gif`,
+    image: `${import.meta.env.BASE_URL}gifs/october/sentences/jacket-hat.gif`,
     answers: [
       "IN FALL, JACKET AND HATS I SEE",
       "IN FALL, JACKET AND CLOUDS I SEE",
