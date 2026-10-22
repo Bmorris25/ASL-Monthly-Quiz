@@ -589,7 +589,7 @@ export const octoberQuiz = {
   {
     id: "23-c4-9",
     question: "What am I signing?",
-    image: `${import.meta.env.BASE_URL}gifs/october/halloween/leaves.gif`,
+    image: `${import.meta.env.BASE_URL}gifs/october/halloween/leaf.gif`,
     answers: ["LEAVES", "TREE", "GREEN", "ORANGE"],
     correct: "LEAVES"
   },
